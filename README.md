@@ -13,7 +13,7 @@ This is a vuepress2 version of blog scaffolding. Use the following command to cr
 - npm
 
   ```sh
-  npm install @theme/cli -g
+  npm i vuepress-theme-cli -g
   
   # then
   aurora blogName
@@ -22,7 +22,7 @@ This is a vuepress2 version of blog scaffolding. Use the following command to cr
 - yarn
 
   ```sh
-  yarn global add @theme/cli
+  yarn global vuepress-theme-cli
   
   # then
   aurora blogName
