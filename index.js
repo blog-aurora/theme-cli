@@ -91,7 +91,7 @@ function downloadTemplate(name,answers) {
             }
 
             spinner.stop()
-            console.log(chalk.green("please run the command: ") + chalk.white("cd " + name + " | ") + chalk.white("npm install or yarn install | npm run dev or yarn dev"))
+            console.log(chalk.green("please run the command: ") + chalk.blue("cd " + name + " | ") + chalk.blue("npm install or yarn install | npm run dev or yarn dev"))
 
             process.exit(1)
         })
