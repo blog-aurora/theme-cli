@@ -8,3 +8,4 @@ deploy.sh
 /Aurora-plugin/**/.git
 /Aurora-plugin/**/node_modules
 /src
+/publish

@@ -10,7 +10,7 @@ const logSymbols = require('log-symbols');
 const got = require("got");
 const { createWriteStream } = require("fs");
 
-let zipUrl = "https://ooszy.cco.vin/theme-template/aurora-theme-template.zip"
+let zipUrl = "http://file.xcye.xyz/aurora-theme-template.zip"
 let zipName = "aurora-theme-template.zip"
 
 //设置打印文字
@@ -93,12 +93,11 @@ function unzip(path,name,configInfo) {
 
         spinner.stop()
 
-        //
-        console.log(chalk.green("Please run the following commands according to your own computer environment: \n"))
-        console.log(chalk.green("step1 set Taobao mirror:  ") + chalk.white(`npm config set registry=http://registry.npm.taobao.org/ ${chalk.red(" or ")} yarn config set registry http://registry.npm.taobao.org/ \n`))
-
-        console.log(chalk.green("step2 download blog dependency:  ") + chalk.white(`cd ${name} & npm install`) + chalk.red(" or ") + chalk.white("cd & yarn install\n"))
-        console.log(chalk.green("step3 Start blog  ") + chalk.white("npm run dev") + chalk.green(" or ") + chalk.white("yarn dev"))
+        console.log(chalk.green("请按照指示，运行下面的命令: \n"))
+        console.log(chalk.green("[") + chalk.white("1") + chalk.green("]  ") + chalk.white(`npm config set registry=http://registry.npm.taobao.org/`))
+        console.log(chalk.green("[") + chalk.white("2") + chalk.green("]  ") + chalk.white(`cd ${name}`))
+        console.log(chalk.green("[") + chalk.white("3") + chalk.green("]  ") + chalk.white(`npm install`))
+        console.log(chalk.green("[") + chalk.white("4") + chalk.green("]  ") + chalk.white(`npm run dev `))
         process.exit(1)
     });
 }
